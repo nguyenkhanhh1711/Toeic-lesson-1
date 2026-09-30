@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TOEIC Vocabulary – Contracts</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Be+Vietnam+Pro:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eceeff;--card:#fff;--ink:#23227a;--mute:#5f61a8;--pri:#5a5fd6;--pri2:#8e93f0;--deep:#2b2a86;--ok:#22a67a;--okb:#dcf7ec;--no:#e0507a;--nob:#ffe3ec;--line:#d5d8ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141346;--card:#1e1d5e;--ink:#e6e8ff;--mute:#a9adf0;--line:#3a3a94;--okb:#0f4a3d;--nob:#5a1d3a}}
+:root[data-theme="dark"]{--bg:#141346;--card:#1e1d5e;--ink:#e6e8ff;--mute:#a9adf0;--line:#3a3a94;--okb:#0f4a3d;--nob:#5a1d3a}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Baloo 2",sans-serif}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,#8e93f0,#fff);z-index:30}
+nav{position:sticky;top:0;z-index:20;display:flex;gap:6px;justify-content:center;align-items:center;padding:10px 60px 10px 12px;background:#2b2a86dd;backdrop-filter:blur(8px);flex-wrap:wrap}
+nav a{color:#e8eaff;text-decoration:none;font:800 13px "Baloo 2";letter-spacing:.5px;padding:3px 14px;border-radius:20px;transition:.25s}
+nav a:hover{background:#fff;color:var(--deep)}
+#snd{position:fixed;top:calc(6px + env(safe-area-inset-top,0px));right:10px;z-index:40;width:42px;height:42px;border-radius:50%;border:2px solid #fff;background:var(--pri);color:#fff;font-size:18px;cursor:pointer}
+header{position:relative;min-height:92vh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:50px 20px 120px;background:linear-gradient(180deg,#8e93f0 0,#5a5fd6 45%,#2b2a86 100%);color:#fff}
+.rays{position:absolute;inset:0;background:repeating-linear-gradient(105deg,transparent 0 50px,#ffffff26 50px 100px,transparent 100px 190px);-webkit-mask:linear-gradient(#000,transparent 85%);mask:linear-gradient(#000,transparent 85%);animation:sway 9s ease-in-out infinite alternate}
+@keyframes sway{to{transform:translateX(50px) skewX(-6deg);opacity:.6}}
+#bub{position:absolute;inset:0;width:100%;height:100%}
+.whale{position:relative;width:min(520px,88vw);animation:swim 7s ease-in-out infinite;filter:drop-shadow(0 20px 30px #1b1a6a88)}
+@keyframes swim{50%{transform:translate(18px,-16px) rotate(-2deg)}}
+.tl{transform-origin:430px 130px;animation:flap 3s ease-in-out infinite}
+@keyframes flap{50%{transform:rotate(8deg)}}
+h1{position:relative;font:800 clamp(38px,9vw,84px)/1 "Baloo 2";color:#e8ebff;text-shadow:0 4px 0 #4a4fc0,0 0 40px #ffffff55;margin-top:6px}
+.scr{position:relative;font:600 clamp(26px,5vw,44px) "Dancing Script",cursive;color:#fff;margin:-2px 0 8px}
+.sub{position:relative;max-width:520px;color:#e2e5ff}
+.go{position:relative;margin-top:24px;padding:10px 34px;border-radius:40px;border:0;background:#a9adff;color:#2b2a86;font:800 17px "Baloo 2";cursor:pointer;box-shadow:0 8px 24px #1b1a6a66;transition:.3s}
+.go:hover{transform:translateY(-4px) scale(1.05);background:#fff}
+.fish{position:absolute;fill:#c8ccff;opacity:.85;animation:fs linear infinite}
+@keyframes fs{from{transform:translateX(-120px)}to{transform:translateX(calc(100vw + 120px))}}
+.sw{position:absolute;bottom:60px;height:230px;fill:#4a4fc0;transform-origin:bottom;animation:wv 4s ease-in-out infinite alternate}
+@keyframes wv{to{transform:skewX(8deg)}}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;height:110px;fill:var(--bg)}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px}
+section{padding:60px 0 10px}
+.ttl{text-align:center;margin-bottom:26px}
+.ttl h2{font:800 clamp(28px,5vw,44px)/1.1 "Baloo 2";color:var(--pri)}
+.ttl .scr2{font:600 26px "Dancing Script",cursive;color:var(--mute)}
+.ttl p{color:var(--mute);max-width:600px;margin:6px auto 0}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.on{opacity:1;transform:none}
+/* vocab flip */
+.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.fl{height:150px;perspective:900px;cursor:pointer}
+.fl div{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.fl.on div{transform:rotateY(180deg)}
+.fl span{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:22px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:12px;box-shadow:0 8px 22px #5a5fd633}
+.fl .f{background:linear-gradient(150deg,#8e93f0,#5a5fd6);color:#fff}
+.fl .f b{font:800 24px "Baloo 2"}.fl .f small{opacity:.8;font-size:12px}
+.fl .b{background:var(--card);border:2px solid var(--pri2);transform:rotateY(180deg)}
+.fl .b b{color:var(--pri);font:800 17px "Baloo 2"}.fl .b i{font-size:13px;color:var(--mute);margin-top:4px}
+/* question cards */
+.qc{background:var(--card);border-radius:26px;padding:22px 24px;margin-bottom:18px;box-shadow:0 10px 30px #5a5fd626;border:2px solid transparent;transition:border-color .3s,box-shadow .3s}
+.qc.done{border-color:var(--line)}
+.qn{display:inline-block;background:var(--pri);color:#fff;font:800 13px "Baloo 2";padding:1px 14px;border-radius:20px;margin-bottom:6px}
+.qc h4{font:600 19px/1.5 "Be Vietnam Pro";margin-bottom:12px}
+.op{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.op{grid-template-columns:1fr}}
+.op button{font:500 16px "Be Vietnam Pro";text-align:left;padding:10px 16px;border-radius:16px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:.25s}
+.op button:hover:not(:disabled){border-color:var(--pri);transform:translateY(-2px);background:var(--bg)}
+.op .c{background:var(--okb);border-color:var(--ok);color:var(--ink)}
+.op .x{background:var(--nob);border-color:var(--no);animation:shk .4s}
+@keyframes shk{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+.exp{display:none;margin-top:14px;padding:12px 16px;border-radius:16px;font-size:15px;animation:up .5s}
+.exp.ok{display:block;background:var(--okb);border-left:5px solid var(--ok)}
+.exp.no{display:block;background:var(--nob);border-left:5px solid var(--no)}
+@keyframes up{from{opacity:0;transform:translateY(12px)}}
+/* translate */
+.hint{display:inline-block;background:var(--bg);border:1.5px dashed var(--pri2);color:var(--pri);font:800 14px "Baloo 2";padding:0 12px;border-radius:14px;margin-left:6px}
+textarea{width:100%;min-height:64px;border-radius:16px;border:2px solid var(--line);background:var(--bg);color:var(--ink);padding:10px 14px;font:16px "Be Vietnam Pro";resize:vertical;margin-bottom:10px}
+textarea:focus{outline:none;border-color:var(--pri)}
+.btn{font:800 15px "Baloo 2";padding:6px 22px;border-radius:30px;border:0;background:var(--pri);color:#fff;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 6px 16px #5a5fd655}
+.btn.g{background:transparent;color:var(--pri);border:2px solid var(--pri2)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+/* score + result */
+#pill{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:25;background:var(--deep);color:#fff;font:800 14px "Baloo 2";padding:5px 20px;border-radius:30px;box-shadow:0 6px 20px #0006;white-space:nowrap}
+.res{text-align:center;background:linear-gradient(160deg,#5a5fd6,#2b2a86);color:#fff;border-radius:30px;padding:36px 20px;margin-bottom:120px}
+.res h2{font:800 34px "Baloo 2"}.res .big{font:800 clamp(40px,10vw,70px)/1.1 "Baloo 2";color:#dfe2ff}
+.res .btn{background:#fff;color:var(--deep);margin-top:16px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<button id="snd" aria-label="Âm thanh">🔇</button>
+<nav><a href="#top">HOME</a><a href="#vocab">TỪ VỰNG</a><a href="#p1">TRẮC NGHIỆM</a><a href="#p2">DỊCH CÂU</a><a href="#kq">KẾT QUẢ</a></nav>
+
+<header id="top">
+  <div class="rays"></div><canvas id="bub"></canvas>
+  <svg class="fish" style="top:16%;width:34px;animation-duration:22s" viewBox="0 0 40 20"><path d="M0 10Q14 0 28 10Q14 20 0 10zM26 10l14-8v16z"/></svg>
+  <svg class="fish" style="top:30%;width:22px;animation-duration:30s;animation-delay:-9s" viewBox="0 0 40 20"><path d="M0 10Q14 0 28 10Q14 20 0 10zM26 10l14-8v16z"/></svg>
+  <svg class="fish" style="top:58%;width:28px;animation-duration:26s;animation-delay:-15s" viewBox="0 0 40 20"><path d="M0 10Q14 0 28 10Q14 20 0 10zM26 10l14-8v16z"/></svg>
+  <svg class="whale" viewBox="0 0 540 260"><g class="tl"><path fill="#3a3db4" d="M430 120C470 100 505 60 530 8C520 70 495 105 478 135C505 150 520 190 536 235C495 208 455 180 420 160z"/></g><path fill="#3438a8" d="M20 125C70 30 320 20 440 115C475 150 440 225 300 220C150 215 40 195 20 125z"/><path fill="#bfc4ff" d="M28 132C90 150 200 160 330 150C400 145 430 130 445 120C455 170 400 218 300 218C150 214 50 190 28 132z"/><path fill="#5a5fd6" d="M215 150C240 200 300 235 345 250C330 210 300 175 270 155z"/><circle cx="360" cy="118" r="6" fill="#1b1a6a"/><path d="M110 150q60 12 130 8M130 165q50 8 110 4" stroke="#8e93f0" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+  <h1>LOOK DEEP</h1><div class="scr">into contracts</div>
+  <p class="sub">TOEIC Vocabulary · Lesson 1: Contracts. Lặn sâu vào 12 từ vựng hợp đồng, làm bài và xem đáp án giải thích ngay sau mỗi câu.</p>
+  <button class="go" id="go">Bắt đầu lặn ♪</button>
+  <svg class="sw" style="left:2%" viewBox="0 0 80 230"><path d="M40 230C10 170 60 130 30 70C25 40 40 20 44 0C50 40 55 60 45 90C30 140 70 170 40 230z"/></svg>
+  <svg class="sw" style="right:4%;animation-delay:-2s;height:190px" viewBox="0 0 80 230"><path d="M40 230C10 170 60 130 30 70C25 40 40 20 44 0C50 40 55 60 45 90C30 140 70 170 40 230z"/></svg>
+  <svg class="wave" viewBox="0 0 1440 110" preserveAspectRatio="none"><path d="M0 60C240 110 420 0 720 40C1000 80 1200 10 1440 50V110H0z"/></svg>
+</header>
+
+<main class="wrap">
+<section id="vocab">
+  <div class="ttl rv"><h2>12 TỪ VỰNG</h2><div class="scr2">chạm để lật thẻ</div><p>Ôn nhanh nghĩa của từng từ trước khi làm bài.</p></div>
+  <div class="vg" id="vg"></div>
+</section>
+
+<section id="p1">
+  <div class="ttl rv"><h2>PART 1: TRẮC NGHIỆM</h2><div class="scr2">Multiple choice · câu 1–20</div><p>Chọn đáp án, đáp án đúng và lời giải thích hiện ngay sau khi bạn trả lời.</p></div>
+  <div id="qs"></div>
+</section>
+
+<section id="p2">
+  <div class="ttl rv"><h2>PART 2: DỊCH CÂU</h2><div class="scr2">Sentence translation · câu 1–12</div><p>Dịch sang tiếng Anh bằng từ gợi ý, dùng cấu trúc đơn giản (S + V + O). Bấm kiểm tra để xem đáp án gợi ý, rồi tự chấm.</p></div>
+  <div id="ts"></div>
+</section>
+
+<section id="kq">
+  <div class="res rv" id="res"><h2>Kết quả của bạn</h2><div class="big" id="big">0 / 32</div><p id="msg">Hoàn thành hai phần để nhận lời nhắn từ cá voi nhé.</p><button class="btn" id="rst">Làm lại từ đầu ↺</button></div>
+</section>
+</main>
+<div id="pill">Trắc nghiệm 0/20 · Dịch 0/12</div>
+
+<script>
+const $=s=>document.querySelector(s);
+/* audio */
+let ac,mg,on=false,tm,st=0;
+function init(){if(ac)return;ac=new(window.AudioContext||window.webkitAudioContext)();mg=ac.createGain();mg.gain.value=.55;const d=ac.createDelay();d.delayTime.value=.4;const f=ac.createGain();f.gain.value=.4;d.connect(f);f.connect(d);mg.connect(ac.destination);mg.connect(d);d.connect(ac.destination)}
+function tone(fr,t,du,ty,v,to){const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.setValueAtTime(fr,t);if(to)o.frequency.exponentialRampToValueAtTime(to,t+du);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+du);o.connect(g);g.connect(mg);o.start(t);o.stop(t+du+.05)}
+const SC=[392,440,523,587,659,784,880],BS=[98,131,110,147];
+function beat(){const t=ac.currentTime+.05;if(st%8==0)tone(BS[(st/8)%4],t,3.6,"sine",.11);if(Math.random()<.65)tone(SC[Math.floor(Math.random()*SC.length)],t,1.6,"sine",.07,Math.random()<.3?SC[2]:0);st++}
+function sfx(k){if(!on)return;const t=ac.currentTime;({tap:()=>tone(500,t,.14,"sine",.14,900),ok:()=>[660,880,1175].forEach((f,i)=>tone(f,t+i*.09,.35,"sine",.14)),no:()=>{tone(300,t,.3,"triangle",.14,200)},flip:()=>tone(700,t,.12,"sine",.1,1100)})[k]()}
+function snd(v){on=v;$("#snd").textContent=v?"🔊":"🔇";if(v){init();ac.resume();clearInterval(tm);tm=setInterval(beat,520)}else clearInterval(tm)}
+$("#snd").onclick=()=>{snd(!on);sfx("tap")};
+$("#go").onclick=()=>{snd(true);sfx("tap");$("#vocab").scrollIntoView()};
+
+/* data */
+const V=[["abide by","tuân thủ, tuân theo","They must abide by the rules."],["agreement","sự thỏa thuận, hợp đồng","We signed an agreement."],["assurance","sự đảm bảo, quả quyết","He gave me an assurance."],["cancellation","sự hủy bỏ","The cancellation of the flight…"],["determine","xác định, định rõ","We need to determine the problem."],["engage","tham gia vào","She engages in the meeting."],["establish","thiết lập, thành lập","They establish a new company."],["obligate","bắt buộc","The contract obligates us to work."],["party","bên (trong hợp đồng)","Both parties agree."],["provision","điều khoản","This provision is very important."],["resolve","giải quyết (vấn đề)","We must resolve this dispute."],["specific","cụ thể, rõ ràng","Give me a specific example."]];
+$("#vg").innerHTML=V.map(v=>`<div class="fl rv"><div><span class="f"><b>${v[0]}</b><small>chạm để xem nghĩa</small></span><span class="b"><b>${v[1]}</b><i>${v[2]}</i></span></div></div>`).join("");
+document.querySelectorAll(".fl").forEach(f=>f.onclick=()=>{f.classList.toggle("on");sfx("flip")});
+
+const Q=[
+["Từ \"abide by\" có nghĩa nào sau đây?",["Đóng góp","Hủy bỏ","Tuân thủ, tuân theo","Cung cấp"],2,"<b>abide by</b> = tuân thủ, tuân theo (abide by the rules: tuân thủ quy tắc)."],
+["Từ \"agreement\" có nghĩa nào sau đây?",["Sự thỏa thuận, hợp đồng","Việc giải quyết","Bữa tiệc","Sự bắt buộc"],0,"<b>agreement</b> = sự thỏa thuận, hợp đồng. “Việc giải quyết” là resolve/resolution."],
+["Từ \"assurance\" có nghĩa nào sau đây?",["Điều khoản","Sự đảm bảo, quả quyết","Sự hủy bỏ","Lợi nhuận"],1,"<b>assurance</b> = sự đảm bảo, quả quyết. “Điều khoản” là provision, “sự hủy bỏ” là cancellation."],
+["Từ \"cancellation\" có nghĩa nào sau đây?",["Sự xác định","Việc tham gia","Sự thành lập","Sự hủy bỏ"],3,"<b>cancellation</b> = sự hủy bỏ (từ động từ cancel + -ation)."],
+["Từ \"determine\" có nghĩa nào sau đây?",["Xác định, định rõ","Ký kết","Giao tiếp","Hủy bỏ"],0,"<b>determine</b> = xác định, định rõ (determine the problem: xác định vấn đề)."],
+["Từ \"engage\" có nghĩa nào sau đây?",["Thoát khỏi","Tham gia vào","Bắt buộc","Tuân theo"],1,"<b>engage</b> = tham gia vào (engage in a meeting)."],
+["Từ \"establish\" có nghĩa nào sau đây?",["Chấm dứt","Thiết lập, thành lập","Thỏa thuận","Tranh chấp"],1,"<b>establish</b> = thiết lập, thành lập (establish a company)."],
+["Chọn từ đúng: The contract will ______ you to work 40 hours a week.",["obligate","resolve","party","establish"],0,"“Hợp đồng sẽ <b>bắt buộc</b> bạn làm việc 40 giờ mỗi tuần.” obligate = bắt buộc, và đứng sau will nên dùng động từ nguyên mẫu."],
+["Chọn từ đúng: The third ______ in this contract is the bank.",["specific","party","provision","assurance"],1,"“<b>Bên</b> thứ ba trong hợp đồng này là ngân hàng.” party = bên (trong hợp đồng)."],
+["Chọn từ đúng: There is a special ______ in the contract about overtime pay.",["cancellation","determine","provision","engage"],2,"“Có một <b>điều khoản</b> đặc biệt trong hợp đồng về tiền làm thêm giờ.” provision = điều khoản; sau tính từ special cần một danh từ."],
+["Từ \"resolve\" có nghĩa nào sau đây?",["Làm phức tạp","Giải quyết (vấn đề)","Tham gia","Bắt buộc"],1,"<b>resolve</b> = giải quyết (vấn đề)."],
+["Từ \"specific\" có nghĩa nào sau đây?",["Chung chung","Mơ hồ","Cụ thể, rõ ràng","To lớn"],2,"<b>specific</b> = cụ thể, rõ ràng. “Chung chung” và “mơ hồ” là nghĩa trái ngược."],
+["Chọn từ đúng: Both sides must ______ the judge's final decision.",["engage","abide by","establish","specific"],1,"“Cả hai bên phải <b>tuân theo</b> quyết định cuối cùng của thẩm phán.” must + abide by."],
+["Chọn từ đúng: They finally reached an ______ after talking for 3 hours.",["agreement","obligate","party","cancellation"],0,"“Họ cuối cùng đã đạt được một <b>thỏa thuận</b> sau 3 giờ nói chuyện.” Có “an” nên cần danh từ bắt đầu bằng nguyên âm."],
+["Chọn từ đúng: We need your ______ that the goods will arrive tomorrow.",["specific","resolve","assurance","establish"],2,"“Chúng tôi cần <b>sự đảm bảo</b> của bạn rằng hàng sẽ đến vào ngày mai.” Sau your là danh từ."],
+["Chọn từ đúng: The flight ______ caused a lot of problems for the passengers.",["provision","cancellation","party","engage"],1,"“Việc <b>hủy</b> chuyến bay đã gây ra nhiều rắc rối cho hành khách.” Vị trí chủ ngữ cần danh từ: cancellation."],
+["Chọn từ đúng: The boss will ______ the date for the next meeting.",["determine","assurance","obligate","agreement"],0,"“Sếp sẽ <b>xác định</b> ngày cho cuộc họp tiếp theo.” Sau will cần động từ nguyên mẫu."],
+["Chọn từ đúng: They ______ a new hospital in the city last year.",["resolved","established","abided by","engaged"],1,"“Họ đã <b>thành lập</b> một bệnh viện mới ở thành phố năm ngoái.” Có last year nên chia quá khứ: established."],
+["Chọn từ đồng nghĩa với \"solve\": We must ______ this problem quickly.",["obligate","determine","resolve","engage"],2,"<b>resolve</b> đồng nghĩa với solve (giải quyết)."],
+["Chọn từ đúng: I need a ______ example, not just a general idea.",["specific","party","provision","cancellation"],0,"“Tôi cần một ví dụ <b>cụ thể</b>, không chỉ một ý tưởng chung chung.” specific là tính từ, trái nghĩa general."]];
+const T=[
+["Họ phải tuân thủ các quy tắc.","abide by","abide","They must abide by the rules.","must + động từ nguyên mẫu; abide by + the rules."],
+["Chúng tôi đã ký một thỏa thuận.","agreement","agreement","We signed an agreement.","Quá khứ signed; dùng “an” trước agreement (nguyên âm)."],
+["Anh ấy cho tôi một sự đảm bảo.","assurance","assurance","He gave me an assurance.","give + người + vật; gave là quá khứ của give."],
+["Sự hủy bỏ chuyến bay làm tôi buồn.","cancellation","cancellation","The cancellation of the flight makes me sad. (made me sad)","Danh từ làm chủ ngữ; make + tân ngữ + tính từ. Có thể chia quá khứ: made."],
+["Chúng tôi cần xác định vấn đề.","determine","determine","We need to determine the problem.","need to + động từ nguyên mẫu."],
+["Cô ấy tham gia vào cuộc họp.","engage","engage","She engages in the meeting.","engage in = tham gia vào; chủ ngữ she nên thêm -s."],
+["Họ thiết lập một công ty mới.","establish","establish","They establish a new company.","Chủ ngữ they nên giữ động từ nguyên mẫu (hiện tại đơn)."],
+["Hợp đồng bắt buộc chúng tôi phải làm việc.","obligate","obligate","The contract obligates us to work.","obligate + tân ngữ + to V; the contract là số ít nên thêm -s."],
+["Cả hai bên đều đồng ý.","party","part","Both parties agree.","both + danh từ số nhiều: party thành parties."],
+["Điều khoản này rất quan trọng.","provision","provision","This provision is very important.","This + danh từ số ít + is."],
+["Chúng ta phải giải quyết tranh chấp này.","resolve","resolve","We must resolve this dispute (problem).","must + động từ nguyên mẫu; dispute = tranh chấp."],
+["Hãy cho tôi một ví dụ cụ thể.","specific","specific","Give me a specific example.","Câu mệnh lệnh bỏ chủ ngữ; specific đứng trước danh từ example."]];
+let s1=0,a1=0,s2=0,a2=0;
+function pill(){$("#pill").textContent=`Trắc nghiệm ${s1}/20 · Dịch ${s2}/12`;$("#big").textContent=`${s1+s2} / 32`;if(a1==20&&a2==12){const p=(s1+s2)/32;$("#msg").textContent=p>=.85?"Tuyệt vời! Bạn bơi cùng cá voi được rồi.":p>=.6?"Khá lắm! Xem lại các câu sai để chắc hơn nhé.":"Đừng lo, ôn lại 12 thẻ từ vựng rồi làm lại nha.";sfx("ok")}}
+function build(){s1=a1=s2=a2=0;
+$("#qs").innerHTML=Q.map((q,i)=>`<div class="qc rv" data-i="${i}"><span class="qn">Câu ${i+1}</span><h4>${q[0]}</h4><div class="op">${q[1].map((o,j)=>`<button data-j="${j}"><b>${"ABCD"[j]}.</b> ${o}</button>`).join("")}</div><div class="exp"></div></div>`).join("");
+document.querySelectorAll(".qc").forEach(c=>{const q=Q[c.dataset.i],bs=c.querySelectorAll("button");bs.forEach(b=>b.onclick=()=>{const j=+b.dataset.j,ok=j==q[2];bs.forEach(x=>x.disabled=true);bs[q[2]].classList.add("c");if(!ok)b.classList.add("x");c.classList.add("done");const e=c.querySelector(".exp");e.className="exp "+(ok?"ok":"no");e.innerHTML=(ok?"✅ <b>Chính xác!</b> ":`❌ <b>Chưa đúng.</b> Đáp án đúng là <b>${"ABCD"[q[2]]}</b>. `)+q[3];a1++;s1+=ok;sfx(ok?"ok":"no");pill()})});
+$("#ts").innerHTML=T.map((t,i)=>`<div class="qc rv" data-i="${i}"><span class="qn">Câu ${i+1}</span><h4>${t[0]} <span class="hint">${t[1]}</span></h4><textarea placeholder="Viết câu tiếng Anh của bạn..."></textarea><button class="btn">Kiểm tra</button><div class="exp"></div></div>`).join("");
+document.querySelectorAll("#ts .qc").forEach(c=>{const t=T[c.dataset.i],ta=c.querySelector("textarea"),e=c.querySelector(".exp");c.querySelector(".btn").onclick=function(){if(this.dataset.u)return;this.dataset.u=1;this.disabled=true;ta.readOnly=true;const v=ta.value.toLowerCase(),used=v.includes(t[2]);sfx("tap");e.className="exp ok";e.innerHTML=`${v.trim()?(used?"👍 Bạn đã dùng từ gợi ý <b>"+t[1]+"</b>.":"💡 Bạn chưa dùng từ gợi ý <b>"+t[1]+"</b>."):"💡 Bạn chưa nhập câu nào."}<br><b>Đáp án gợi ý:</b> ${t[3]}<br><i>Lưu ý:</i> ${t[4]}<div class="row"><button class="btn" data-r="1">Mình viết đúng</button><button class="btn g" data-r="0">Cần luyện thêm</button></div>`;e.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{s2+=+b.dataset.r;a2++;e.querySelector(".row").innerHTML=b.dataset.r=="1"?"🎉 Tuyệt, đã ghi nhận!":"🔁 Không sao, đọc lại đáp án rồi thử lần sau nhé.";c.classList.add("done");sfx(b.dataset.r=="1"?"ok":"flip");pill()})}});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));pill();$("#msg").textContent="Hoàn thành hai phần để nhận lời nhắn từ cá voi nhé."}
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.08});
+build();document.querySelectorAll("#vg .rv,.ttl,.res").forEach(el=>io.observe(el));
+$("#rst").onclick=()=>{build();scrollTo({top:0})};
+addEventListener("scroll",()=>{$("#bar").style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+"%"});
+/* bubbles */
+const c=$("#bub"),x=c.getContext("2d");let B=[];
+function rs(){c.width=c.offsetWidth;c.height=c.offsetHeight;B=Array.from({length:34},()=>({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*6+2,s:Math.random()*.7+.3,p:Math.random()*6}))}rs();addEventListener("resize",rs);
+(function d(t){x.clearRect(0,0,c.width,c.height);B.forEach(b=>{b.y-=b.s;b.x+=Math.sin(t/800+b.p)*.4;if(b.y<-10)b.y=c.height+10;x.beginPath();x.arc(b.x,b.y,b.r,0,7);x.strokeStyle="#ffffffaa";x.lineWidth=1.5;x.stroke();x.fillStyle="#ffffff22";x.fill()});requestAnimationFrame(d)})(0);
+</script>
+</body>
+</html>
